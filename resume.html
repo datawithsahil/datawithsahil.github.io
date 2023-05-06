@@ -146,15 +146,52 @@
 
              <h3 class="resume-title">Internship</h3>
             <div class="resume-item">
-              <h4>Data Scientist</h4>
+              <h4>Data Scientist </h4>
               <h5>May 2022 - Present</h5>
               <p><em>Ineuron.ai, Bengaluru</em></p>
               <p>
                 <ul>
-                  <li>In ineuron.ai, I learned how data science industry works.</li>
-                  <li>I learned python, Statistics, MongoDB, Mysql, Machine Learning</li>
-                  <li>Learned how supervised, unsupervised learning and clustering algorithms works and the mathemathical intuition behind them </li>
-                  <li>Learned to do prediction using Machine Learning Algorithms and made rest api using flask frame work</li>
+                  In ineuron.ai, I learned how data science industry works.
+                  learned python, Statistics, MongoDB, Mysql, Machine Learning, 
+                  learned how supervised, unsupervised learning and clustering algorithms works and the mathemathical intuition behind them, 
+                  Learned to do prediction using Machine Learning Algorithms and made rest api using flask frame work <br><br>
+                  Projects i have worked on : <br><br>
+                
+                  <h4><a href="https://github.com/Sahiljosan/ML_Project2_Movie_Recommendation_System" rel="noreferrer" target="_blank">Content Based Movie Recommendation System</a></h4>
+                    <li>Gathered <b>4803 Movies</b> dataset from TMBD. Extracted genres, keywords, cast (Top 3 actors) and crew and include all these to Tags Feature. </li>
+                    <li>For Text Vectorisation we have used <b>CountVectorizer</b>. Perform stemming using <b>PorterStemmer</b>, so that the words will not repeat in tags </li>
+                    <li>Find the distance between all vectors of all movies using <b>cosine_similarity</b>. and Top 5 movies having lower distance are recommended. </li>
+                    <li>Used <b>Streamlit</b> to create web app and deployment. </li>
+                    <br>
+
+                  <h4><a href="https://github.com/Sahiljosan/Machine-Learning_Practical-Implimentation/tree/main/Ineuron%20Assignments/APS%20Failur%20At%20Scania%20Trucks" rel="noreferrer" target="_blank">Predict APS Failure at Scania Trucks using ML Algorithms </a></h4>
+                    <li>Used dataset having readings of 171 sensors. </li>
+                    <li>After <b>EDA, Preprocessing, Feature Selection</b> and <b>Handling the outliers</b>, We seperated dependent and independent features. </li>
+                    <li>For <b>Model Building</b> i have used different classifiers as this was a classification problem
+                      statement and finds that <b>XG Boost</b> gives highest accuracy of <b>99%</b></li>
+                    <li>To be absolutely sure and to avoid model from over-fitting, i have done <b>Hyperparameter
+                      tunning</b> using <b>GridSearchCV</b> and again the accuracy of <b>XGBoost Classifier</b> was maximum
+                      (99%)</li> <br>
+
+                  <h4><a href="https://github.com/Sahiljosan/ML-Projects/tree/main/Car%20Price%20Predictor%20Project" rel="noreferrer" target="_blank">Predict the car price and build Flask Web App for Deployment</a></h4>
+                    <li>Used dataset from kaggle having 892 records and 6 features.</li>
+                    <li>The data has many categorical features so we have used <b>OneHotEncoder</b> for encoding
+                      all features.</li>
+                    <li>For model building we have used <b>linear regession</b> but at first our <b>r2_score</b> was very less
+                      57%, so we run a for loop of 1-1000 to check r2_score for different values of <b>random_state.</b>
+                      and finds that at random_state 433 r2_score id max 84%</li>
+                    <li>We store the model in pickle file and made <b>Flask web app</b> for deployment in <b>Heroku</b></li>
+                    <br>
+
+                  <h4><a href="https://github.com/Sahiljosan/Python_Projects/blob/main/Scrapping_Top_Github_Repositories/Scrapping_Top_Github_Repositories.ipynb" rel="noreferrer" target="_blank">Web Scrapping Using Python</a></h4>
+                    <li>Scrapped https://github.com/topics <br>
+                      - Used <b>requests</b> to download the page <br>
+                      - Used <b>BeautifulSoup</b> from <b>BS4</b> to parse and extract information</li>
+                    <li>For each topics, extracted Topic Title, Topic Page URL, and Topic Description </li>
+                    <li>For each topics, extracted Top 20 repositories.</li>
+                    <li>For each repository, graped the Repo name, username, stars, and repo URL</li>
+                    <li>Converted the extracted information into a pandas dataframe and for each topic,
+                      created a CSV file.</li>           
                 </ul>
               </p>
             </div>
